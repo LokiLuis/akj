@@ -1,377 +1,440 @@
-<!DOCTYPE html>
-<html lang="it" class="scroll-smooth">
-<head>
+<html lang="it" class="scroll-smooth"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Dentistico Sorriso Amico</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
-        /* Custom scrollbar for webkit */
+        /* Custom scrollbar */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 20px; }
+        .mask-gradient { mask-image: linear-gradient(to bottom, black 80%, transparent 100%); }
     </style>
-</head>
-<body class="bg-slate-50 text-slate-600 antialiased selection:bg-teal-100 selection:text-teal-800">
+<link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style><link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style><link id="all-fonts-link-font-google-sans-flex" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-google-sans-flex">.font-google-sans-flex { font-family: 'Google Sans Flex', sans-serif !important; }</style><link id="all-fonts-link-font-oswald" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-oswald">.font-oswald { font-family: 'Oswald', sans-serif !important; }</style><link id="all-fonts-link-font-dm-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-dm-sans">.font-dm-sans { font-family: 'DM Sans', sans-serif !important; }</style><link id="all-fonts-link-font-cormorant" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-cormorant">.font-cormorant { font-family: 'Cormorant Garamond', serif !important; }</style></head>
+<body class="bg-slate-50 text-slate-600 antialiased selection:bg-teal-100 selection:text-teal-800 relative">
 
-<!-- Navigation -->
-<nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-200/60 bg-white/80 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16 items-center">
-            <div class="flex-shrink-0 flex items-center gap-2">
-                <div class="w-8 h-8 bg-gradient-to-tr from-blue-600 to-teal-400 rounded-lg flex items-center justify-center text-white">
-                    <span class="font-medium text-lg leading-none">S</span>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-200/60 bg-white/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-8 h-8 bg-gradient-to-tr from-blue-600 to-teal-400 rounded-lg flex items-center justify-center text-white">
+                        <span class="font-medium text-lg leading-none tracking-tighter">S</span>
+                    </div>
+                    <span class="font-medium text-slate-900 tracking-tight text-lg">SorrisoAmico</span>
                 </div>
-                <span class="font-medium text-slate-900 tracking-tight text-lg">SorrisoAmico</span>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#servizi" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Servizi</a>
+                    <a href="#chi-siamo" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Lo Studio</a>
+                    <a href="#team" class="hover:text-blue-600 transition-colors text-sm font-medium text-slate-500">Il Team</a>
+                    <a href="#recensioni" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Recensioni</a>
+                </div>
+                <a href="https://wa.me/393474783329" target="_blank" class="inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white transition-all duration-200 bg-slate-900 border border-transparent rounded-full hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900">
+                    Prenota Visita
+                </a>
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#servizi" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Servizi</a>
-                <a href="#chi-siamo" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Lo Studio</a>
-                <a href="#recensioni" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Recensioni</a>
-            </div>
-            <a href="#contatti" class="inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white transition-all duration-200 bg-slate-900 border border-transparent rounded-full hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900">
-                Prenota Visita
-            </a>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Hero Section -->
-<section class="pt-32 pb-16 lg:pt-48 lg:pb-24 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-            <!-- Text Content -->
-            <div class="max-w-2xl">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-medium mb-6">
+    <!-- Hero Section -->
+    <section class="lg:pt-48 lg:pb-24 overflow-hidden pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                <!-- Text Content -->
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-medium mb-6">
                         <span class="relative flex h-2 w-2">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                         </span>
-                    Nuovi pazienti benvenuti
+                        Nuovi pazienti benvenuti
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-medium text-slate-900 tracking-tight leading-[1.1] mb-6">
+                        Il tuo sorriso merita <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">il meglio assoluto.</span>
+                    </h1>
+                    <p class="text-lg text-slate-500 mb-8 leading-relaxed max-w-lg font-light">
+                        Cure dentali senza dolore e tecnologie moderne per tutta la famiglia. Un approccio gentile per farti sentire a casa.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/393474783329" target="_blank" class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full shadow-lg shadow-blue-600/20 hover:bg-blue-700 hover:shadow-blue-600/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
+                            Prenota una Visita
+                            <iconify-icon icon="solar:chat-round-dots-linear" width="20" stroke-width="1.5" class="ml-2"></iconify-icon>
+                        </a>
+                        <a href="tel:+39 347 478 3329" class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-slate-700 transition-all duration-200 bg-white border border-slate-200 rounded-full hover:bg-slate-50 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-200">
+                            <iconify-icon icon="solar:phone-calling-linear" width="20" stroke-width="1.5" class="mr-2 text-slate-400"></iconify-icon>
+                            Chiamaci ora
+                        </a>
+                    </div>
                 </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-medium text-slate-900 tracking-tight leading-[1.1] mb-6">
-                    Il tuo sorriso merita <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">il meglio assoluto.</span>
-                </h1>
-                <p class="text-lg text-slate-500 mb-8 leading-relaxed max-w-lg font-light">
-                    Cure dentali senza dolore e tecnologie moderne per tutta la famiglia. Un approccio gentile per farti sentire a casa.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full shadow-lg shadow-blue-600/20 hover:bg-blue-700 hover:shadow-blue-600/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
-                        Prenota una Visita
-                        <iconify-icon icon="solar:arrow-right-linear" width="20" stroke-width="1.5" class="ml-2"></iconify-icon>
-                    </button>
-                    <button class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-slate-700 transition-all duration-200 bg-white border border-slate-200 rounded-full hover:bg-slate-50 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-200">
-                        <iconify-icon icon="solar:phone-calling-linear" width="20" stroke-width="1.5" class="mr-2 text-slate-400"></iconify-icon>
-                        Chiamaci ora
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hero Image -->
-            <div class="relative lg:ml-auto">
-                <div class="absolute -top-4 -right-4 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-                <div class="absolute -bottom-4 -left-4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] lg:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=1000&auto=format&fit=crop" alt="Paziente sorridente" class="w-full h-full object-cover">
-
-                    <!-- Floating Badge -->
-                    <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                            <iconify-icon icon="solar:smile-circle-linear" width="24" stroke-width="1.5"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-slate-400 font-medium uppercase tracking-wide">Soddisfazione</p>
-                            <p class="text-sm font-semibold text-slate-900">500+ Pazienti Felici</p>
+                
+                <!-- Hero Image -->
+                <div class="relative lg:ml-auto">
+                    <div class="absolute -top-4 -right-4 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+                    <div class="absolute -bottom-4 -left-4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+                    
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/3] lg:aspect-square">
+                        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Paziente sorridente" class="w-full h-full object-cover" style="">
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                <iconify-icon icon="solar:smile-circle-linear" width="24" stroke-width="1.5" class=""></iconify-icon>
+                            </div>
+                            <div class="">
+                                <p class="text-xs text-slate-400 font-medium uppercase tracking-wide">Soddisfazione</p>
+                                <p class="text-sm font-semibold text-slate-900">500+ Sorrisi</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Trust Signals -->
-<div class="border-y border-slate-100 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100">
-            <div class="flex items-center justify-center py-6 gap-3">
-                <iconify-icon icon="solar:medical-kit-linear" width="28" stroke-width="1.5" class="text-blue-500"></iconify-icon>
-                <span class="text-sm font-medium text-slate-700">Urgenze in giornata</span>
-            </div>
-            <div class="flex items-center justify-center py-6 gap-3">
-                <iconify-icon icon="solar:parking-circle-linear" width="28" stroke-width="1.5" class="text-teal-500"></iconify-icon>
-                <span class="text-sm font-medium text-slate-700">Parcheggio riservato</span>
-            </div>
-            <div class="flex items-center justify-center py-6 gap-3">
-                <iconify-icon icon="solar:hand-heart-linear" width="28" stroke-width="1.5" class="text-blue-500"></iconify-icon>
-                <span class="text-sm font-medium text-slate-700">Prima visita gratuita</span>
+    <!-- Trust Signals -->
+    <div class="border-y border-slate-100 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                <div class="flex items-center justify-center py-6 gap-3">
+                    <iconify-icon icon="solar:medical-kit-linear" width="28" stroke-width="1.5" class="text-blue-500"></iconify-icon>
+                    <span class="text-sm font-medium text-slate-700">Urgenze in giornata</span>
+                </div>
+                <div class="flex items-center justify-center py-6 gap-3">
+                    <iconify-icon icon="solar:parking-circle-linear" width="28" stroke-width="1.5" class="text-teal-500"></iconify-icon>
+                    <span class="text-sm font-medium text-slate-700">Parcheggio riservato</span>
+                </div>
+                <div class="flex items-center justify-center py-6 gap-3">
+                    <iconify-icon icon="solar:hand-heart-linear" width="28" stroke-width="1.5" class="text-blue-500"></iconify-icon>
+                    <span class="text-sm font-medium text-slate-700">Prima visita gratuita</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Services Section -->
-<section id="servizi" class="py-20 lg:py-32">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl font-medium text-slate-900 tracking-tight mb-4">Trattamenti d'eccellenza</h2>
-            <p class="text-slate-500">
-                Utilizziamo le tecnologie più avanzate per garantire risultati duraturi e un'esperienza confortevole.
-            </p>
-        </div>
+    <!-- Services Section -->
+    <section id="servizi" class="py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-medium text-slate-900 tracking-tight mb-4">Trattamenti d'eccellenza</h2>
+                <p class="text-slate-500">
+                    Utilizziamo le tecnologie più avanzate per garantire risultati duraturi e un'esperienza confortevole.
+                </p>
+            </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="group relative bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <iconify-icon icon="solar:screw-linear" width="28" stroke-width="1.5"></iconify-icon>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Implantologia -->
+                <div class="group relative bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:bolt-circle-linear" width="28" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-slate-900 mb-3 tracking-tight">Implantologia</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                        Denti fissi in 24 ore per tornare a sorridere e masticare con sicurezza. Soluzioni definitive e indolori.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700">
+                        Scopri di più 
+                        <iconify-icon icon="solar:arrow-right-linear" width="16" class="ml-1 transition-transform group-hover:translate-x-1"></iconify-icon>
+                    </a>
                 </div>
-                <h3 class="text-xl font-medium text-slate-900 mb-3 tracking-tight">Implantologia</h3>
-                <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                    Denti fissi in 24 ore per tornare a sorridere e masticare con sicurezza. Soluzioni definitive e indolori.
-                </p>
-                <a href="#" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700">
-                    Scopri di più
-                    <iconify-icon icon="solar:arrow-right-linear" width="16" class="ml-1 transition-transform group-hover:translate-x-1"></iconify-icon>
-                </a>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="group relative bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <iconify-icon icon="solar:stars-linear" width="28" stroke-width="1.5"></iconify-icon>
+                <!-- Card 2 -->
+                <div class="group relative bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:stars-linear" width="28" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-slate-900 mb-3 tracking-tight">Ortodonzia Invisibile</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                        Raddrizza i denti senza che nessuno se ne accorga. Mascherine trasparenti comode e rimovibili.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-700">
+                        Scopri di più 
+                        <iconify-icon icon="solar:arrow-right-linear" width="16" class="ml-1 transition-transform group-hover:translate-x-1"></iconify-icon>
+                    </a>
                 </div>
-                <h3 class="text-xl font-medium text-slate-900 mb-3 tracking-tight">Ortodonzia Invisibile</h3>
-                <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                    Raddrizza i denti senza che nessuno se ne accorga. Mascherine trasparenti comode e rimovibili.
-                </p>
-                <a href="#" class="inline-flex items-center text-sm font-medium text-teal-600 hover:text-teal-700">
-                    Scopri di più
-                    <iconify-icon icon="solar:arrow-right-linear" width="16" class="ml-1 transition-transform group-hover:translate-x-1"></iconify-icon>
-                </a>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="group relative bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <iconify-icon icon="solar:shield-check-linear" width="28" stroke-width="1.5"></iconify-icon>
-                </div>
-                <h3 class="text-xl font-medium text-slate-900 mb-3 tracking-tight">Igiene e Prevenzione</h3>
-                <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                    Pulizia profonda e sbiancamento professionale per mantenere la salute della bocca e la bellezza del sorriso.
-                </p>
-                <a href="#" class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-700">
-                    Scopri di più
-                    <iconify-icon icon="solar:arrow-right-linear" width="16" class="ml-1 transition-transform group-hover:translate-x-1"></iconify-icon>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Us Section -->
-<section id="chi-siamo" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
-            <div class="lg:col-span-6 mb-10 lg:mb-0 relative">
-                <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-transparent rounded-3xl transform rotate-3"></div>
-                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=800&auto=format&fit=crop" alt="Dottore nel suo studio" class="relative rounded-3xl shadow-lg border border-slate-100 object-cover w-full aspect-[4/3]">
-            </div>
-            <div class="lg:col-span-6">
-                <span class="text-blue-600 font-medium text-sm tracking-wider uppercase mb-2 block">Il Nostro Impegno</span>
-                <h2 class="text-3xl font-medium text-slate-900 tracking-tight mb-6">Perché scegliere <br> Sorriso Amico?</h2>
-                <p class="text-slate-500 mb-8 leading-relaxed">
-                    Non siamo solo dentisti, siamo partner della tua salute. Crediamo che andare dal dentista debba essere un'esperienza serena, priva di ansia e focalizzata sul benessere del paziente.
-                </p>
-
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
-                            <iconify-icon icon="solar:check-read-linear" class="text-teal-500" width="16"></iconify-icon>
-                        </div>
-                        <span class="ml-3 text-slate-700 text-sm font-medium">Approccio completamente indolore con sedazione cosciente</span>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
-                            <iconify-icon icon="solar:monitor-camera-linear" class="text-teal-500" width="16"></iconify-icon>
-                        </div>
-                        <span class="ml-3 text-slate-700 text-sm font-medium">Tecnologia digitale e scanner 3D per la massima precisione</span>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
-                            <iconify-icon icon="solar:sofa-linear" class="text-teal-500" width="16"></iconify-icon>
-                        </div>
-                        <span class="ml-3 text-slate-700 text-sm font-medium">Ambiente rilassante, pensato per farti sentire a tuo agio</span>
-                    </li>
-                </ul>
-
-                <div class="mt-10">
-                    <a href="#contatti" class="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center">
-                        Conosci il team
-                        <iconify-icon icon="solar:arrow-right-linear" width="16" class="ml-2"></iconify-icon>
+                <!-- Card 3 -->
+                <div class="group relative bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <iconify-icon icon="solar:shield-check-linear" width="28" stroke-width="1.5" class=""></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-slate-900 mb-3 tracking-tight">Igiene e Prevenzione</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-6">
+                        Pulizia profonda e sbiancamento professionale per mantenere la salute della bocca e la bellezza del sorriso.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-700">
+                        Scopri di più 
+                        <iconify-icon icon="solar:arrow-right-linear" width="16" class="ml-1 transition-transform group-hover:translate-x-1"></iconify-icon>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Testimonials -->
-<section id="recensioni" class="py-20 lg:py-32 bg-slate-50 border-t border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-medium text-slate-900 tracking-tight text-center mb-16">Cosa dicono i nostri pazienti</h2>
+    <!-- About Us Section -->
+    <section id="chi-siamo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                <div class="lg:col-span-6 mb-10 lg:mb-0 relative">
+                     <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-transparent rounded-3xl transform rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Dottore nel suo studio" class="relative rounded-3xl shadow-lg border border-slate-100 object-cover w-full aspect-[4/3]" style="">
+                </div>
+                <div class="lg:col-span-6">
+                    <span class="text-blue-600 font-medium text-sm tracking-wider uppercase mb-2 block">Il Nostro Impegno</span>
+                    <h2 class="text-3xl font-medium text-slate-900 tracking-tight mb-6">Perché scegliere  Sorriso Amico?</h2>
+                    <p class="text-slate-500 mb-8 leading-relaxed">
+                        Non siamo solo dentisti, siamo partner della tua salute. Crediamo che andare dal dentista debba essere un'esperienza serena, priva di ansia e focalizzata sul benessere del paziente.
+                    </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Review 1 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
-                <div class="flex text-yellow-400 mb-4 gap-1">
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                </div>
-                <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
-                    "Finalmente ho trovato un dentista di cui mi fido. Ho fatto un impianto e non ho sentito nulla. Professionalità top!"
-                </p>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop" alt="User" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold text-slate-900">Giulia M.</p>
-                        <p class="text-xs text-slate-400">Paziente da 2 anni</p>
-                    </div>
-                </div>
-            </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
+                                <iconify-icon icon="solar:check-read-linear" class="text-teal-500" width="16"></iconify-icon>
+                            </div>
+                            <span class="ml-3 text-slate-700 text-sm font-medium">Approccio completamente indolore con sedazione cosciente</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
+                                <iconify-icon icon="solar:monitor-camera-linear" class="text-teal-500" width="16"></iconify-icon>
+                            </div>
+                            <span class="ml-3 text-slate-700 text-sm font-medium">Tecnologia digitale e scanner 3D per la massima precisione</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
+                                <iconify-icon icon="solar:sofa-linear" class="text-teal-500" width="16"></iconify-icon>
+                            </div>
+                            <span class="ml-3 text-slate-700 text-sm font-medium">Ambiente rilassante, pensato per farti sentire a tuo agio</span>
+                        </li>
+                    </ul>
 
-            <!-- Review 2 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
-                <div class="flex text-yellow-400 mb-4 gap-1">
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                </div>
-                <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
-                    "Ho portato mio figlio per l'apparecchio invisibile. Il dottore è stato gentilissimo e ha spiegato tutto con calma."
-                </p>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" alt="User" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold text-slate-900">Marco R.</p>
-                        <p class="text-xs text-slate-400">Papà di Luca</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hidden lg:block">
-                <div class="flex text-yellow-400 mb-4 gap-1">
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                    <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
-                </div>
-                <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
-                    "Ambiente pulitissimo e moderno. L'igiene dentale è stata molto accurata. Consigliatissimo a tutti."
-                </p>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop" alt="User" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold text-slate-900">Elena S.</p>
-                        <p class="text-xs text-slate-400">Paziente da 6 mesi</p>
+                    <div class="mt-10">
+                         <a href="#team" class="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center">
+                            Conosci il team
+                            <iconify-icon icon="solar:arrow-right-linear" width="16" class="ml-2"></iconify-icon>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer / Contact -->
-<footer id="contatti" class="bg-slate-900 text-slate-300 py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-
-            <!-- Contact Info -->
-            <div>
-                <h2 class="text-3xl font-medium text-white tracking-tight mb-2">Prenota la tua visita</h2>
-                <p class="text-slate-400 mb-8 font-light">Siamo qui per prenderci cura del tuo sorriso.</p>
-
-                <div class="space-y-6">
-                    <div class="flex items-center gap-4 group cursor-pointer">
-                        <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <iconify-icon icon="solar:phone-calling-linear" width="24" stroke-width="1.5"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Telefono</p>
-                            <p class="text-2xl font-medium text-white tracking-tight hover:text-blue-400 transition-colors">+39 02 123 4567</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-teal-400">
-                            <iconify-icon icon="solar:map-point-linear" width="24" stroke-width="1.5"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Dove siamo</p>
-                            <p class="text-white">Via Roma 123, 20121 Milano (MI)</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-indigo-400">
-                            <iconify-icon icon="solar:clock-circle-linear" width="24" stroke-width="1.5"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Orari</p>
-                            <p class="text-white text-sm">Lun - Ven: 09:00 - 19:00 <br> Sab: 09:00 - 13:00</p>
-                        </div>
-                    </div>
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="max-w-xl">
+                    <span class="text-blue-600 font-medium text-sm tracking-wider uppercase mb-2 block">I Nostri Specialisti</span>
+                    <h2 class="text-3xl font-medium text-slate-900 tracking-tight">Esperti dedicati al tuo sorriso</h2>
                 </div>
-            </div>
-
-            <!-- Map Placeholder -->
-            <div class="relative h-64 lg:h-auto w-full bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex items-center justify-center group">
-                <!-- Simulating Map -->
-                <div class="absolute inset-0 bg-[url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/9.19,45.46,14,0/800x600?access_token=YOUR_TOKEN')] bg-cover bg-center opacity-40 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
-
-                <!-- Fallback visual if no map api key -->
-                <div class="absolute inset-0 flex flex-col items-center justify-center z-10 p-6 text-center">
-                    <iconify-icon icon="solar:map-point-bold" width="48" class="text-blue-500 mb-4 animate-bounce"></iconify-icon>
-                    <span class="text-white font-medium">Google Maps Embed</span>
-                    <span class="text-xs text-slate-500 mt-2">Via Roma 123, Milano</span>
-                </div>
-
-                <!-- Action Button overlay -->
-                <a href="https://maps.google.com" target="_blank" class="absolute bottom-4 right-4 bg-white text-slate-900 text-xs font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-blue-50 transition-colors z-20 flex items-center gap-2">
-                    Apri Mappa
-                    <iconify-icon icon="solar:arrow-right-up-linear" width="14"></iconify-icon>
+                <a href="#contatti" class="hidden md:inline-flex items-center text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                    Lavora con noi <iconify-icon icon="solar:arrow-right-up-linear" width="16" class="ml-1"></iconify-icon>
                 </a>
             </div>
-        </div>
 
-        <div class="border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-            <p>&copy; 2023 Studio Dentistico Sorriso Amico. Tutti i diritti riservati.</p>
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 gap-x-6 gap-y-6">
+                <!-- Team Member 1 -->
+                <div class="group bg-white rounded-2xl p-4 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300">
+                    <div class="aspect-[4/5] rounded-xl overflow-hidden bg-slate-100 mb-4 relative">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ebdc9e1a-90e5-4c55-a9cc-9a6bf7831389_800w.jpg" alt="Dr. Marco Rossi" class="group-hover:scale-105 transition-transform duration-500 w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex justify-center gap-3">
+                                <a href="#" class="text-white hover:text-blue-200"><iconify-icon icon="solar:letter-linear" width="20" class=""></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h3 class="text-lg font-medium text-slate-900 tracking-tight" style="">Dr.essa Valeria Negretti</h3>
+                        <p class="text-sm font-medium text-blue-600 mb-1">Direttore Sanitario</p>
+                        <p class="text-xs text-slate-500" style="">Specialista in Implantologia</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="group bg-white rounded-2xl p-4 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300">
+                    <div class="aspect-[4/5] rounded-xl overflow-hidden bg-slate-100 mb-4 relative">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/addd77f0-a372-4074-a703-fb215ef18af7_800w.jpg" alt="Dr.ssa Elena Bianchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex justify-center gap-3">
+                                <a href="#" class="text-white hover:text-blue-200"><iconify-icon icon="solar:letter-linear" width="20" class=""></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h3 class="text-lg font-medium text-slate-900 tracking-tight" style="">Dr. Giovanni Buffoli</h3>
+                        <p class="text-sm font-medium text-teal-600 mb-1">Direttore Sanitario</p>
+                        <p class="text-xs text-slate-500" style="">Specialista in implantologia</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                
+
+                <!-- Team Member 4 -->
+                
             </div>
         </div>
-    </div>
-</footer>
-</body>
-</html>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="recensioni" class="py-20 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-medium text-slate-900 tracking-tight text-center mb-16">Cosa dicono i nostri pazienti</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="flex text-yellow-400 mb-4 gap-1">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                        "Finalmente ho trovato un dentista di cui mi fido. Ho fatto un impianto e non ho sentito nulla. Professionalità top!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&amp;w=100&amp;auto=format&amp;fit=crop" alt="User" class="w-full h-full object-cover" style="">
+                        </div>
+                        <div class="">
+                            <p class="text-sm font-semibold text-slate-900">Giulia M.</p>
+                            <p class="text-xs text-slate-400">Paziente da 2 anni</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="flex text-yellow-400 mb-4 gap-1">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                        "Ho portato mio figlio per l'apparecchio invisibile. Il dottore è stato gentilissimo e ha spiegato tutto con calma."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&amp;w=100&amp;auto=format&amp;fit=crop" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-900">Marco R.</p>
+                            <p class="text-xs text-slate-400">Papà di Luca</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hidden lg:block">
+                    <div class="flex text-yellow-400 mb-4 gap-1">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                        "Ambiente pulitissimo e moderno. L'igiene dentale è stata molto accurata. Consigliatissimo a tutti."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&amp;w=100&amp;auto=format&amp;fit=crop" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div class="">
+                            <p class="text-sm font-semibold text-slate-900">Elena S.</p>
+                            <p class="text-xs text-slate-400">Paziente da 6 mesi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="lg:py-24 text-slate-300 bg-slate-900 pt-16 pb-16" id="contatti">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+                
+                <!-- Contact Info -->
+                <div class="">
+                    <h2 class="text-3xl font-medium text-white tracking-tight mb-2">Prenota la tua visita</h2>
+                    <p class="text-slate-400 mb-8 font-light">Siamo qui per prenderci cura del tuo sorriso.</p>
+
+                    <div class="space-y-6">
+                        <a href="tel:+39 347 478 3329" class="flex items-center gap-4 group cursor-pointer">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                <iconify-icon icon="solar:phone-calling-linear" width="24" stroke-width="1.5"></iconify-icon>
+                            </div>
+                            <div class="">
+                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Telefono</p>
+                                <p class="hover:text-blue-400 transition-colors text-2xl font-medium text-white tracking-tight">+39 347 478 3329</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-teal-400">
+                                <iconify-icon icon="solar:map-point-linear" width="24" stroke-width="1.5"></iconify-icon>
+                            </div>
+                            <div class="">
+                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Dove siamo</p>
+                                <p class="text-white">Via G. Zanardelli, 12D, 25035 Ospitaletto BS</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-indigo-400">
+                                <iconify-icon icon="solar:clock-circle-linear" width="24" stroke-width="1.5"></iconify-icon>
+                            </div>
+                            <div class="">
+                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Orari</p>
+                                <p class="text-white text-sm">Lun - Ven: 09:00 - 19:00  Sab: 09:00 - 13:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="relative h-64 lg:h-auto w-full bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex items-center justify-center group">
+                    <!-- Simulating Map -->
+                    <div class="absolute inset-0 bg-[url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/9.19,45.46,14,0/800x600?access_token=YOUR_TOKEN')] bg-cover bg-center opacity-40 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
+                    
+                    <!-- Fallback visual -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4698.883493902774!2d10.0662416431368!3d45.55087186760067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478171e90cd812af%3A0xb38935c3049cb83c!2sStudio%20Dentistico%20Sorriso%20Amico!5e0!3m2!1sit!2sit!4v1769774942864!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+                    
+                    <!-- Action Button overlay -->
+                    <a href="https://maps.google.com" target="_blank" class="absolute bottom-4 right-4 bg-white text-slate-900 text-xs font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-blue-50 transition-colors z-20 flex items-center gap-2">
+                        Apri Mappa
+                        <iconify-icon icon="solar:arrow-right-up-linear" width="14"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p class="">© 2026 Studio Dentistico Sorriso Amico. Tutti i diritti riservati.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Sticky Button -->
+    <a href="https://wa.me/393474783329" target="_blank" class="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:bg-[#20bd5a] transition-all hover:scale-110 focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-[#25D366]/50">
+        <iconify-icon icon="solar:chat-round-dots-linear" width="36" stroke-width="1.5"></iconify-icon>
+    </a>
+
+</body></html>
