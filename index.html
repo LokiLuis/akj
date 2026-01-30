@@ -27,19 +27,24 @@
     <nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-200/60 bg-white/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
+                <!-- Logo Left -->
                 <div class="flex-shrink-0 flex items-center gap-2">
                     <img src="favicon/apple-touch-icon.png" alt="Logo Sorriso Amico" class="w-16 h-16 rounded-lg object-contain">
                     <span class="font-medium text-slate-900 tracking-tight text-lg">SorrisoAmico</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#servizi" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Servizi</a>
-                    <a href="#chi-siamo" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Lo Studio</a>
-                    <a href="#team" class="hover:text-blue-600 transition-colors text-sm font-medium text-slate-500">Il Team</a>
-                    <a href="#recensioni" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Recensioni</a>
+                
+                <!-- Nav Links + Button Grouped Right -->
+                <div class="flex items-center gap-8">
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#servizi" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Servizi</a>
+                        <a href="#chi-siamo" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Lo Studio</a>
+                        <a href="#team" class="hover:text-blue-600 transition-colors text-sm font-medium text-slate-500">Il Team</a>
+                        <a href="#recensioni" class="text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors">Recensioni</a>
+                    </div>
+                    <a href="https://wa.me/393474783329" target="_blank" class="inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white transition-all duration-200 bg-slate-900 border border-transparent rounded-full hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900">
+                        Prenota Visita
+                    </a>
                 </div>
-                <a href="https://wa.me/393474783329" target="_blank" class="inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white transition-all duration-200 bg-slate-900 border border-transparent rounded-full hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900">
-                    Prenota Visita
-                </a>
             </div>
         </div>
     </nav>
@@ -363,72 +368,74 @@
 
     <!-- Footer / Contact -->
     <footer class="lg:py-24 text-slate-300 bg-slate-900 pt-16 pb-16" id="contatti">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
-                
-                <!-- Contact Info -->
-                <div class="">
-                    <h2 class="text-3xl font-medium text-white tracking-tight mb-2">Prenota la tua visita</h2>
-                    <p class="text-slate-400 mb-8 font-light">Siamo qui per prenderci cura del tuo sorriso.</p>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
 
-                    <div class="space-y-6">
-                        <a href="tel:+39 347 478 3329" class="flex items-center gap-4 group cursor-pointer">
-                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                                <iconify-icon icon="solar:phone-calling-linear" width="24" stroke-width="1.5"></iconify-icon>
-                            </div>
-                            <div class="">
-                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Telefono</p>
-                                <p class="hover:text-blue-400 transition-colors text-2xl font-medium text-white tracking-tight">+39 347 478 3329</p>
-                            </div>
-                        </a>
+      <!-- Contact Info -->
+      <div class="">
+        <h2 class="text-3xl font-medium text-white tracking-tight mb-2">Prenota la tua visita</h2>
+        <p class="text-slate-400 mb-8 font-light">Siamo qui per prenderci cura del tuo sorriso.</p>
 
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-teal-400">
-                                <iconify-icon icon="solar:map-point-linear" width="24" stroke-width="1.5"></iconify-icon>
-                            </div>
-                            <div class="">
-                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Dove siamo</p>
-                                <p class="text-white">Via G. Zanardelli, 12D, 25035 Ospitaletto BS</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-indigo-400">
-                                <iconify-icon icon="solar:clock-circle-linear" width="24" stroke-width="1.5"></iconify-icon>
-                            </div>
-                            <div class="">
-                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Orari</p>
-                                <p class="text-white text-sm">Lun - Ven: 09:00 - 19:00  Sab: 09:00 - 13:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Map Placeholder -->
-                <div class="relative h-64 lg:h-auto w-full bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex items-center justify-center group">
-                    <!-- Simulating Map -->
-                    <div class="absolute inset-0 bg-[url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/9.19,45.46,14,0/800x600?access_token=YOUR_TOKEN')] bg-cover bg-center opacity-40 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
-                    
-                    <!-- Fallback visual -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4698.883493902774!2d10.0662416431368!3d45.55087186760067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478171e90cd812af%3A0xb38935c3049cb83c!2sStudio%20Dentistico%20Sorriso%20Amico!5e0!3m2!1sit!2sit!4v1769774942864!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
-                    
-                    <!-- Action Button overlay -->
-                    <a href="https://maps.app.goo.gl/rWDVWvT2YMp4xem6A" target="_blank" class="absolute bottom-4 right-4 bg-white text-slate-900 text-xs font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-blue-50 transition-colors z-20 flex items-center gap-2">
-                        Apri Mappa
-                        <iconify-icon icon="solar:arrow-right-up-linear" width="14"></iconify-icon>
-                    </a>
-                </div>
+        <div class="space-y-6">
+          <a href="tel:+39 347 478 3329" class="flex items-center gap-4 group cursor-pointer">
+            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+              <iconify-icon icon="solar:phone-calling-linear" width="24" stroke-width="1.5"></iconify-icon>
             </div>
-
-            <div class="border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-                <p class="">© 2026 Studio Dentistico Sorriso Amico. Tutti i diritti riservati.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
-                </div>
+            <div class="">
+              <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Telefono</p>
+              <p class="hover:text-blue-400 transition-colors text-2xl font-medium text-white tracking-tight">+39 347
+                478 3329</p>
             </div>
+          </a>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-teal-400">
+              <iconify-icon icon="solar:map-point-linear" width="24" stroke-width="1.5"></iconify-icon>
+            </div>
+            <div class="">
+              <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Dove siamo</p>
+              <p class="text-white">Via G. Zanardelli, 12D, 25035 Ospitaletto BS</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-indigo-400">
+              <iconify-icon icon="solar:clock-circle-linear" width="24" stroke-width="1.5"></iconify-icon>
+            </div>
+            <div class="">
+              <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Orari</p>
+              <p class="text-white text-sm">Lun - Ven: 09:00 - 19:00 Sab: 09:00 - 13:00</p>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+
+      <!-- Map Placeholder -->
+      <div class="relative h-64 lg:h-auto w-full bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 flex items-center justify-center group">
+        <!-- Simulating Map -->
+        <div class="bg-center group-hover:grayscale-0 transition-all duration-700 opacity-40 bg-[url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/9.19,45.46,14,0/800x600?access_token=YOUR_TOKEN')] bg-cover absolute top-0 right-0 bottom-0 left-0 grayscale">
+        </div>
+
+        <!-- Fallback visual -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4698.883493902774!2d10.0662416431368!3d45.55087186760067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478171e90cd812af%3A0xb38935c3049cb83c!2sStudio%20Dentistico%20Sorriso%20Amico!5e0!3m2!1sit!2sit!4v1769774942864!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+
+        <!-- Action Button overlay -->
+        <a href="https://maps.app.goo.gl/rWDVWvT2YMp4xem6A" target="_blank" class="absolute bottom-4 right-4 bg-white text-slate-900 text-xs font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-blue-50 transition-colors z-20 flex items-center gap-2">
+          Apri Mappa
+          <iconify-icon icon="solar:arrow-right-up-linear" width="14"></iconify-icon>
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <p class="">© 2026 Studio Dentistico Sorriso Amico. Tutti i diritti riservati.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <!-- WhatsApp Sticky Button -->
     <a href="https://wa.me/393474783329" target="_blank" class="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl hover:bg-[#20bd5a] transition-all hover:scale-110 focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-[#25D366]/50">
@@ -436,11 +443,3 @@
     </a>
 
 </body></html>
-
-
-
-
-
-
-
-
